@@ -1,7 +1,7 @@
 import random
 from typing import Dict, List
 
-class Systemtopologylogy:
+class SystemTopology:
     SERVICES: Dict[str, List[str]] = {
         "frontend-proxy": ["prod-frontend-a1","prod-frontend-a2"],
         "auth-service": ["prod-auth-b1", "prod-auth-b2"],

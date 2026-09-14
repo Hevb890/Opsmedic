@@ -1,13 +1,13 @@
 import random
 from schemas import LogLevel, TelemetryEvent, TelemetryType
-from topology import Systemtopologylogy
+from topology import SystemTopology
 
 class MetricSimulator:
-    def __init__(self, topologylogy: Systemtopologylogy):
-        self.topologylogy = topologylogy
+    def __init__(self, topology: SystemTopology):
+        self.topologylogy = topology
 
     def generate_tick(self, service: str) -> TelemetryType:
-        host = self.topologylogy.get_random_host(service)
+        host = self.topology.get_random_host(service)
 
         if service == "user-db" and self.topology.db_deadlock_active:
             cpu = round(random.uniform(92.0, 99.8), 2)
