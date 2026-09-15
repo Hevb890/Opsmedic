@@ -1,8 +1,6 @@
 import time
 from opsmedic.Telementry_and_Infra_Layer import LogEngine, SystemTopology, MetricSimulator, LoghubReplayer
 
-
-
 def run_layer1_simulation():
     print("==================================================")
     print("      OPSMEDIC - LAYER 1 TELEMETRY HARNESS       ")

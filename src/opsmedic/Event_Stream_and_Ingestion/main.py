@@ -1,10 +1,7 @@
 import json
 import time
 from opsmedic.Event_Stream_and_Ingestion import RedisStreamProducer, SlidingWindowAggregator
-
-from opsmedic.Telementry_and_Infra_Layer.topology import SystemTopology
-from opsmedic.Telementry_and_Infra_Layer.metric_sim import MetricSimulator
-from opsmedic.Telementry_and_Infra_Layer.log_engine import LogEngine
+from opsmedic.Telementry_and_Infra_Layer import SystemTopology, MetricSimulator, LogEngine
 
 
 def run_layer2_demo():

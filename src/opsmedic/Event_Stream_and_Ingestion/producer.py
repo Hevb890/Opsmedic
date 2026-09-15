@@ -1,5 +1,5 @@
 import redis
-from opsmedic.Telementry_and_Infra_Layer.schemas import TelemetryEvent
+from opsmedic.Telementry_and_Infra_Layer import TelemetryEvent
 
 class RedisStreamProducer:
     def __init__(self, host: str = 'localhost', port: int = 6379, stream_key: str = 'telemetry:raw:stream'):
