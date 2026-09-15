@@ -1,6 +1,7 @@
 import random
-from schemas import LogLevel, TelemetryEvent, TelemetryType
-from topology import SystemTopology
+from .schemas import LogLevel, TelemetryEvent, TelemetryType
+from .topology import SystemTopology
+
 
 class MetricSimulator:
     def __init__(self, topology: SystemTopology):
