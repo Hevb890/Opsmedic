@@ -10,7 +10,7 @@ class LogEngine:
     def emit_log(self, service: str) -> TelemetryEvent:
         host = self.topology.get_random_host(service)
 
-        if self.topolgy.db_deadlock_active and service in [
+        if self.topology.db_deadlock_active and service in [
             "payment-gateway",
             "user-db",
         ]:

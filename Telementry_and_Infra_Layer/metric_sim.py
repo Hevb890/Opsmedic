@@ -4,7 +4,7 @@ from topology import SystemTopology
 
 class MetricSimulator:
     def __init__(self, topology: SystemTopology):
-        self.topologylogy = topology
+        self.topology = topology
 
     def generate_tick(self, service: str) -> TelemetryType:
         host = self.topology.get_random_host(service)

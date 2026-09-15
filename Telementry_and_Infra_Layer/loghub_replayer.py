@@ -25,7 +25,7 @@ class LoghubReplayer:
             if "ERROR" in line:
                 level = LogLevel.ERROR
             elif "WARN" in line:
-                level - LogLevel.WARN
+                level = LogLevel.WARN
 
             yield TelemetryEvent(
                 service="hdfs-cluster",
