@@ -1,7 +1,6 @@
 import random
-
-from schemas import LogLevel, TelemetryType, TelemetryEvent
-from topology import SystemTopology
+from .schemas import LogLevel, TelemetryEvent, TelemetryType
+from .topology import SystemTopology
 
 class LogEngine:
     def __init__(self, topology: SystemTopology):

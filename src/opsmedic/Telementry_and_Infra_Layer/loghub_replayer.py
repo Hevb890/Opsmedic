@@ -1,6 +1,6 @@
-import json
 from typing import Iterator, List
-from schemas import LogLevel, TelemetryEvent, TelemetryType
+from .schemas import LogLevel, TelemetryEvent, TelemetryType
+
 
 class LoghubReplayer:
     def __init__(self, raw_logs: List[str] = None):
